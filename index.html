@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <nav>
+            <ul class="cabecera--menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Trabajo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cabecera--img">
+            <h1>Desarrollador web</h1>
+        </div>
+    </header>
+
+    <section class="seccion">
+
+        <div class="sobreMi">
+
+            <div class="sobreMi--img">
+                <img src="multimedia/mi-foto.jpg" alt="">
+            </div>
+            
+            <div class="sobreMi--desc">
+                <h2>Hola Mundo! &#128075;&#128513;</h2>
+                <p>
+                    Mi nombre es Alberto y soy un estudiante de grado superior en Desarrollo de Aplicaciones Web. Aunque
+                    aún no tengo experiencia profesional en el campo del desarrollo web, estoy muy interesado en aprender y
+                    crecer como desarrollador.
+    
+                    Me encanta la tecnología y siempre estoy tratando de mantenerme al tanto de las últimas tendencias y
+                    herramientas en el mundo del desarrollo web. Estoy aprendiendo a programar en lenguajes como HTML, CSS y
+                    JavaScript, Angular, etc... y estoy trabajando en proyectos personales para aplicar mis conocimientos y mejorar mis
+                    habilidades.
+    
+                    En mi tiempo libre, disfruto de la lectura y la exploración de nuevas tecnologías y frameworks. También
+                    me encanta colaborar con otros desarrolladores y aprender de ellos.
+    
+                    Estoy emocionado de comenzar mi carrera como desarrollador web y espero poder aportar mi creatividad y
+                    conocimientos a un equipo de trabajo en el futuro. Gracias por visitar mi sitio web y espero poder
+                    trabajar contigo en el futuro.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contacto">
+            <form action="/enviar-mensaje" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+                <input type="submit" value="Enviar">
+              </form>
+        </div>
+    </section>
+</body>
+
+</html>
