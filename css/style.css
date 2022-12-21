@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* afecta a todo el documento */
+
 *{
     padding: 0%;
     margin: 0%;
@@ -8,41 +11,14 @@
 html{
     scroll-behavior: smooth;
 }
-.cabecera{
-    box-shadow: 0px 0px 7px 1px black;
-}
-.cabecera nav{
+
+/* barra de navegacion */
+
+.cabecera .cabecera--navegar{
+    width: 100%;
+    position: fixed;
     display: flex;
     background-color: black;
-}
-.cabecera nav img{
-    width: 100px;
-    padding: 0 50px;
-}
-.cabecera--img{
-    background: url('../multimedia/img1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom left;
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cabecera--img h1{
-    color: white;
-    font-size: 60px;
-    text-shadow: 0px 0px 12px rgb(29, 29, 29);
-    animation: zoom 3.5s; /* aplica la animación "zoom" durante 5 segundos */
-}
-@keyframes zoom {
-    from {
-        transform: scale(0.5); /* aplica una escala del 50% al inicio del keyframe */
-      }
-      to {
-        transform: scale(1); /* aplica una escala del 100% al final del keyframe */
-      }
 }
 .cabecera--menu{
     width: 100%;
@@ -66,7 +42,75 @@ html{
     transition: 0.2s;
 }
 .cabecera--menu li a:hover{
-    text-shadow: 2px 2px 0px rgb(255, 0, 0);
+    text-shadow: 1px 1px 0px rgb(255, 0, 0);
+}
+
+@keyframes mostrarMenu {
+    from {
+        top: -100px;
+      }
+      to {
+        top: 0px;
+      }
+}
+
+@keyframes ocultarMenu {
+    from {
+        top: 0px;
+      }
+      to {
+        top: -100px;
+      }
+}
+.cabecera nav img{
+    width: 100px;
+}
+.cabecera nav .cabecera--navegar--logo{
+    margin-left: 50px;
+
+}
+
+/* titulo o cabecera de la web */
+
+.cabecera--img{
+    background: url('../multimedia/img1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecera--img h1{
+    color: white;
+    font-size: 60px;
+    text-shadow: 0px 0px 12px rgb(29, 29, 29);
+    animation: zoom 3.5s; /* aplica la animación "zoom" durante 5 segundos */
+}
+.cabecera--img p{
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+    text-shadow: 0px 0px 12px rgb(29, 29, 29);
+}
+.cabecera--img--reloj{
+    font-size: 30px !important;
+    padding: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 0px rgb(255, 0, 0) !important;
+    padding-bottom: 20vh;
+}
+.cabecera--img i{
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    transition: 0.4s;
+}
+.cabecera--img i:hover{
+    text-shadow: 0px 15px 0px rgb(252, 252, 252) !important;
 }
 
 /* sobre mi */
@@ -75,37 +119,97 @@ html{
     margin: 0 auto;
     /* width: 75%; */
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
+#sobreMi .sobreMi--flechaUp{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    font-size: 40px;
+    transition: 0.4s;
+}
+#sobreMi .sobreMi--flechaDown{
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: center;
+    font-size: 40px;
+    transition: 0.4s;
+}
+#sobreMi .sobreMi--flechaDown:hover{
+    text-shadow: 0px 15px 0px rgb(0, 0, 0) !important;
+}
+#sobreMi .sobreMi--flechaUp:hover{
+    text-shadow: 0px 15px 0px rgb(0, 0, 0) !important;
+}
+
 .sobreMi div{
     padding: 70px;
     width: 50%;
 }
-.sobreMi--img img{
-    box-shadow: 0px 0px 7px 1px black;
-    width: 380px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 200px;
+
+.sobreMi--inf{
+    display: grid;
+    place-items: center;
 }
-.sobreMi--desc{
-    background-image: url('../multimedia/img2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+.sobreMi--inf img{
+
+    border-radius: 10px;
 }
 .sobreMi--desc h3{
-    color: white;
     font-size: 35px;
     padding: 20px 0;
 }
 .sobreMi--desc p{
-    color: white;
-    font-weight: 400;
+    width: 80%;
+    font-weight: 500;
     line-height: 27px;
     font-size: 18px;
 }
 
+/* contacto */
+
+.contacto{
+    display: flex;
+}
+.contacto div{
+    padding: 50px;
+    width: 50%;
+}
+/* formulario */
+
+.contacto--formulario{
+    background-color: #E8ECED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contacto--formulario h3{
+    padding: 20px;
+    font-size: 23px;
+    padding: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 7px 7px 0 0;
+}
+.contacto--formulario form{
+    border: 1px solid black;
+    background-color: rgb(44, 44, 44);
+    border-radius: 7px;
+}
+.contacto--formulario p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.contacto--formulario p input{
+    width: 100%;
+    padding: 10px 0;
+}
+.contacto--formulario--envio{
+    display: block;
+    margin: 0 auto;
+    padding: 7px;
+}
 /* contacto */
 
 .contacto--img{
@@ -121,7 +225,7 @@ html{
 }
 
 .contacto--img h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 60px;
     text-shadow: 0px 0px 12px rgb(29, 29, 29);
 }

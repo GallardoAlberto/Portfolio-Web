@@ -6,56 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="multimedia/logo.png">
+    <script src="https://kit.fontawesome.com/c98f52caa2.js" crossorigin="anonymous"></script>
+    <title>Alberto Gallardo - Portfolio</title>
 </head>
 
 <body>
-    <header class="cabecera">
-        <nav>
-            <img src="multimedia/logo.png" alt="">
+    <header class="cabecera" id="inicio">
+        <nav class="cabecera--navegar">
+            <a href="#inicio" class="cabecera--navegar--logo"><img src="multimedia/logo.png" alt=""></a>
             <ul class="cabecera--menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobreMi">Sobre mí</a></li>
                 <li><a href="#">Trabajo</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        
         <div class="cabecera--img">
             <h1>Desarrollador web</h1>
+            <p>WEB - DEVELOPER</p>
+            <p class="cabecera--img--reloj"></p>
+            <i class="fa-sharp fa-solid fa-chevron-down cabecera--img--flecha"></i>
         </div>
     </header>
 
     <section class="seccion">
 
-        <div class="sobreMi" id="sobreMi">
-            
-            <div class="sobreMi--img">
-                <img src="multimedia/mi-foto.jpg" alt="">
+       
+
+        <div id="sobreMi">
+
+            <i class="fa-sharp fa-solid fa-chevron-up sobreMi--flechaUp"></i>
+
+            <div class="sobreMi">
+                <div class="sobreMi--inf">
+                    <img src="multimedia/mi-foto.jpg" alt="">
+                </div>
+                
+                <div class="sobreMi--desc">
+                    <h3>Hola Mundo! &#128075;&#128513;</h3>
+                    <p>
+                        Mi nombre es Alberto y soy un estudiante de grado superior en Desarrollo de Aplicaciones Web. Aunque
+                        aún no tengo experiencia profesional en el campo del desarrollo web, estoy muy interesado en aprender y
+                        crecer como desarrollador.
+                    </p><br>
+                    <p>                    
+                        Me encanta la tecnología y siempre estoy tratando de mantenerme al tanto de las últimas tendencias y
+                        herramientas en el mundo del desarrollo web. Estoy aprendiendo a programar en lenguajes como HTML, CSS y
+                        JavaScript, Angular, etc... y estoy trabajando en proyectos personales para aplicar mis conocimientos y mejorar mis
+                        habilidades.
+                    </p><br>
+                    <p>
+                        En mi tiempo libre, disfruto de la lectura y la exploración de nuevas tecnologías y frameworks. También
+                        me encanta colaborar con otros desarrolladores y aprender de ellos.
+                    </p><br>
+                    <p>
+                        Estoy emocionado de comenzar mi carrera como desarrollador web y espero poder aportar mi creatividad y
+                        conocimientos a un equipo de trabajo en el futuro. Gracias por visitar mi sitio web y espero poder
+                        trabajar contigo en el futuro.
+                    </p>
+                </div>
             </div>
             
-            <div class="sobreMi--desc">
-                <h3>Hola Mundo! &#128075;&#128513;</h3>
-                <p>
-                    Mi nombre es Alberto y soy un estudiante de grado superior en Desarrollo de Aplicaciones Web. Aunque
-                    aún no tengo experiencia profesional en el campo del desarrollo web, estoy muy interesado en aprender y
-                    crecer como desarrollador.
-                </p><br>
-                <p>                    
-                    Me encanta la tecnología y siempre estoy tratando de mantenerme al tanto de las últimas tendencias y
-                    herramientas en el mundo del desarrollo web. Estoy aprendiendo a programar en lenguajes como HTML, CSS y
-                    JavaScript, Angular, etc... y estoy trabajando en proyectos personales para aplicar mis conocimientos y mejorar mis
-                    habilidades.
-                </p><br>
-                <p>
-                    En mi tiempo libre, disfruto de la lectura y la exploración de nuevas tecnologías y frameworks. También
-                    me encanta colaborar con otros desarrolladores y aprender de ellos.
-                </p><br>
-                <p>
-                    Estoy emocionado de comenzar mi carrera como desarrollador web y espero poder aportar mi creatividad y
-                    conocimientos a un equipo de trabajo en el futuro. Gracias por visitar mi sitio web y espero poder
-                    trabajar contigo en el futuro.
-                </p>
-            </div>
+            <i class="fa-sharp fa-solid fa-chevron-down sobreMi--flechaDown"></i>
 
         </div>
 
@@ -63,35 +77,43 @@
             <h1>Contacto</h1>
         </div>
 
-        <div class="contacto">
-
-            <div class="contacto--formulario">
-                <form>
-                    <p>
-                        <label>Nombre:</label><br>
-                        <input type="text" placeholder="Ejemplo: 'Alberto'">
-                    </p>
-                    
-                    <p>
-                        <label>Correo electrónico:</label><br>
-                        <input type="email" placeholder="correo@ejemplo.com">
-                    </p>
-                    
-                    <p>
-                        <label>Mensaje:</label><br>
-                        <textarea></textarea><br>
-                    </p>
-                    
-                    <input type="submit" value="Enviar">
-                  </form>
-            </div>
+        <div class="contacto" id="contacto">
 
             <div class="contacto--redes">
                 <h3>Redes Sociales</h3>
+
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+
+            <div class="contacto--formulario">
+                <form>
+                    <h3>Rellena el formulario</h3>
+
+                    <p>
+                        <input type="text" placeholder="Nombre" required>
+                    </p>
+                    
+                    <p>
+                        <input type="email" placeholder="Correo electrónico" required>
+                    </p>
+                    
+                    <p>
+                        <textarea placeholder="Mensaje" required></textarea><br>
+                    </p>
+                    
+                    <input class="contacto--formulario--envio" type="submit" value="Enviar">
+                  </form>
             </div>
 
         </div>
     </section>
+
+    
+
+    <script src="js/menu.js"></script>
+    <script src="js/reloj.js"></script>
+    <script src="js/flechas.js"></script>
 </body>
 
 </html>
