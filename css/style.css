@@ -12,6 +12,19 @@ html{
     scroll-behavior: smooth;
 }
 
+.musica{
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 200px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: 0.3s;
+    padding: 10px 15px;
+}
+.musica:hover{
+    background-color: red;
+}
 /* barra de navegacion */
 
 .cabecera .cabecera--navegar{
@@ -110,7 +123,7 @@ html{
     transition: 0.4s;
 }
 .cabecera--img i:hover{
-    text-shadow: 0px 15px 0px rgb(252, 252, 252) !important;
+    text-shadow: 0px -15px 0px rgb(252, 252, 252) !important;
 }
 
 /* sobre mi */
@@ -121,28 +134,28 @@ html{
     display: flex;
 }
 #sobreMi .sobreMi--flechaUp{
-    display: flex;
-    padding-top: 100px;
-    justify-content: center;
+    width: 40px;
+    display: block;
+    margin: 50px auto;
     font-size: 40px;
     transition: 0.4s;
 }
 #sobreMi .sobreMi--flechaDown{
-    display: flex;
-    padding-bottom: 100px;
-    justify-content: center;
+    width: 40px;
+    display: block;
+    margin: 50px auto;
     font-size: 40px;
     transition: 0.4s;
 }
 #sobreMi .sobreMi--flechaDown:hover{
-    text-shadow: 0px 15px 0px rgb(0, 0, 0) !important;
+    text-shadow: 0px -15px 0px rgb(0, 0, 0) !important;
 }
 #sobreMi .sobreMi--flechaUp:hover{
     text-shadow: 0px 15px 0px rgb(0, 0, 0) !important;
 }
 
 .sobreMi div{
-    padding: 70px;
+    padding: 15px;
     width: 50%;
 }
 
@@ -151,10 +164,10 @@ html{
     place-items: center;
 }
 .sobreMi--inf img{
-
     border-radius: 10px;
 }
 .sobreMi--desc h3{
+    width: 80%;
     font-size: 35px;
     padding: 20px 0;
 }
