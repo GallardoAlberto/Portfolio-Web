@@ -1,5 +1,30 @@
 // Los iconos con flechas tienen la accion de subir y bajar de sitio en el que se encuentra el usuario
 
+// subir al inicio
+
+let flechaInicio = document.querySelector('.inicio--up');
+
+document.addEventListener('scroll', () => {
+
+    if (window.scrollY >= 100) {
+        flechaInicio.style.right = '50px';
+
+        flechaInicio.addEventListener('mouseenter', () => {
+            flechaInicio.style.backgroundColor = '#fc8211';
+        })
+
+        flechaInicio.addEventListener('mouseleave', () => {
+            flechaInicio.style.backgroundColor = '#fca311';
+        })
+
+        flechaInicio.addEventListener('click', () => {
+            window.location.href = "#inicio";
+        })
+    }
+    else {
+        flechaInicio.style.right = '-150px';
+    }
+})
 // cabecera
 
 let flecha1 = document.querySelector('.cabecera--img--flecha');

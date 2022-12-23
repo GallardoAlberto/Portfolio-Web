@@ -20,9 +20,11 @@
 
 
     <header class="cabecera" id="inicio">
+        <i class="fa-sharp fa-solid fa-chevron-up inicio--up"></i>
         <nav class="cabecera--navegar">
             <a href="#inicio" class="cabecera--navegar--logo"><img src="multimedia/logo.png" alt=""></a>
             <ul class="cabecera--menu">
+                <i class="fa-solid fa-bars cabecera--menu--icono"></i>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobreMi">Sobre mí</a></li>
                 <li><a href="#">Trabajo</a></li>
@@ -95,10 +97,14 @@
         <div class="contacto" id="contacto">
 
             <div class="contacto--redes">
+
                 <h3>Redes Sociales</h3>
 
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-instagram"></i>
+                <div class="contacto--redes--iconos">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                
             </div>
 
             <div class="contacto--formulario">
@@ -106,15 +112,18 @@
                     <h3>Rellena el formulario</h3>
 
                     <p>
-                        <input type="text" placeholder="Nombre" required>
+                        <label>Tú nombre:</label><br>
+                        <input type="text" required>
                     </p>
 
                     <p>
+                        <label>Tú correo electrónico</label><br>
                         <input type="email" placeholder="Correo electrónico" required>
                     </p>
 
                     <p>
-                        <textarea placeholder="Mensaje" required></textarea><br>
+                        <label>Tú mensaje</label><br>
+                        <textarea required></textarea><br>
                     </p>
 
                     <input class="contacto--formulario--envio" type="submit" value="Enviar">

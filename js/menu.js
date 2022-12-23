@@ -20,3 +20,33 @@ document.addEventListener('scroll', () => {
 
 });
 
+//menu adaptado a movil, icono en funcionamiento
+
+let iconoMenu = document.querySelector('.cabecera--menu--icono');
+let opcionesMenu = barraNavegacion.getElementsByTagName('li');
+let contClickMenu = 0;
+
+iconoMenu.addEventListener('click', () =>{
+  
+  if(contClickMenu % 2 == 0){
+
+    iconoMenu.classList.remove('fa-bars');
+    iconoMenu.classList.add('fa-xmark');
+    
+    for (let i = 0; i < opcionesMenu.length; i++) {
+      opcionesMenu[i].style.display = 'flex';
+      opcionesMenu[i].style.justifyContent = 'flex-end';
+    }
+    contClickMenu++;
+  }else{
+    iconoMenu.classList.remove('fa-xmark');
+    iconoMenu.classList.add('fa-bars');
+
+    for (let i = 0; i < opcionesMenu.length; i++) {
+      opcionesMenu[i].style.display = 'none';
+    }
+
+    contClickMenu++;
+
+  }
+})
