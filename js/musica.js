@@ -19,8 +19,6 @@ iconoAud.addEventListener('click', () => {
 
 document.addEventListener('scroll', () => {
 
-  console.log(window.scrollY);
-
   if (window.scrollY >= 100) {
     iconoAud.style.right = '115px';
     iconoAud.style.backgroundColor = '#fca311';

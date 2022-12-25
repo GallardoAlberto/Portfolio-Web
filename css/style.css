@@ -118,46 +118,6 @@ html {
 
 }
 
-/* barra de navegacion adaptada a pantallas*/
-
-@media (max-width: 1050px) {
-
-    .cabecera--navegar{
-        display: block !important;
-        background-color: transparent !important;
-    }
-    
-
-    .cabecera--menu i {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        margin: 35px 60px;
-        color: white;
-        display: block;
-        font-size: 27px;
-        cursor: pointer;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .cabecera--menu{
-        display: block;
-        width: 100%;
-    }
-    .cabecera--menu li {
-        display: none;
-        padding: 15px 60px;
-    }
-    .cabecera--menu li:hover {
-        background-color: transparent;
-        padding: 15px 60px;
-    }
-    .cabecera--menu li a{
-        font-size: 16px;
-    }
-}
-
 /* titulo o cabecera de la web */
 
 .cabecera--img {
@@ -207,24 +167,14 @@ html {
     text-shadow: 0px -15px 0px rgb(252, 252, 252) !important;
 }
 
-/* cabecera adaptada a pantallas */
-
-@media (max-width: 1050px) {
-    .cabecera--img h1 {
-        font-size: 50px;
-    }
-}
-
 /* sobre mi */
 
 #sobreMi {
-    height: 100vh;
     background-color: #F4F5F5;
 }
 
 .sobreMi {
     margin: 0 auto;
-    /* width: 75%; */
     display: flex;
     justify-content: center;
 }
@@ -286,40 +236,20 @@ html {
     font-size: 18px;
 }
 
-/* contacto titulo */
-
-.contacto--img {
-    background: url('../multimedia/img3.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom left;
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contacto--img h1 {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    text-shadow: 0px 0px 12px rgb(29, 29, 29);
-}
-
 /* contacto */
 
 .contacto {
     display: flex;
-    align-items: center;
 }
 
-.contacto .contacto--redes{
-    background-color: rebeccapurple;
-    background-position: top;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 50px;
+.contacto--redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
+    background-color: #1E0707;
+    padding: 20px;
 }
 
 .contacto .contacto--redes h3{
@@ -327,6 +257,7 @@ html {
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 50px;
     text-shadow: 3px 3px 0px black;
     font-size: 40px;
 }
@@ -340,12 +271,15 @@ html {
 
 /* redes sociales */
 
-
+.contacto--redes--iconos a{
+    color: #1E0707;
+    border-radius: 200px;
+}
 .contacto--redes--iconos i{
     margin: 10px;
     border-radius: 200px;
-    padding: 15px;
-    background-color: red;
+    padding: 10px 12px;
+    background-color: white;
     font-size: 40px;
 
 }
@@ -354,7 +288,9 @@ html {
 .contacto--formulario {
     width: 50%;
     height: 50vh;
-    background-color: #E8ECED;
+    background-image: url('../multimedia/imgContacto.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,3 +329,76 @@ html {
     padding: 7px;
 }
 
+
+@media (max-width: 1050px) {
+
+    /* barra de navegacion */
+
+    .cabecera--navegar{
+        display: block !important;
+        background-color: transparent !important;
+    }
+    
+    .cabecera--menu i {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        margin: 35px 60px;
+        color: white;
+        display: block;
+        font-size: 27px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cabecera--menu{
+        display: block;
+        width: 100%;
+    }
+    .cabecera--menu li {
+        display: none;
+        padding: 15px 60px;
+    }
+    .cabecera--menu li:hover {
+        background-color: transparent;
+        padding: 15px 60px;
+    }
+    .cabecera--menu li a{
+        font-size: 16px;
+    }
+
+    /* cabecera */
+
+    .cabecera--img h1 {
+        font-size: 50px;
+    }
+
+    .sobreMi{
+        display: block;
+    }
+
+    .sobreMi div{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .sobreMi--inf img{
+        margin: 20px auto;
+        width: 370px;
+        border-radius: 10px;
+    }
+
+    .sobreMi--desc{
+        text-align: center;
+    }
+
+    .sobreMi--desc h3{
+        padding: 30px;
+    }
+
+    .sobreMi--desc p{
+        font-size: 17px;
+        padding: 5px 200px;
+    }
+}

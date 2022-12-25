@@ -9,14 +9,19 @@ let ubicacion = 0;
 
 document.addEventListener('scroll', () => {
 
-    if (window.scrollY > ubicacion) {
-        barraNavegacion.style.animation = 'ocultarMenu 0.5s';
-        barraNavegacion.style.animationFillMode = 'forwards';
-      } else {
-        barraNavegacion.style.animation = 'mostrarMenu 0.5s';
-      }
+  let ancho = parseInt(window.innerWidth);
 
-      ubicacion = window.scrollY;
+  if(ancho > 1050){
+    if (window.scrollY > ubicacion) {
+      barraNavegacion.style.animation = 'ocultarMenu 0.5s';
+      barraNavegacion.style.animationFillMode = 'forwards';
+    } else {
+      barraNavegacion.style.animation = 'mostrarMenu 0.5s';
+    }
+
+    ubicacion = window.scrollY;
+  }
+
 
 });
 
