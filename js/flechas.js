@@ -44,5 +44,23 @@ flecha2.addEventListener('click', () => {
 let flecha3 = document.querySelector('.sobreMi--flechaDown');
 
 flecha3.addEventListener('click', () => {
+    window.location.href = "#habilidades";
+})
+
+let flecha4 = document.querySelector('.habilidades--flechaUp');
+
+flecha4.addEventListener('click', () => {
+    window.location.href = "#sobreMi";
+})
+
+let flecha5 = document.querySelector('.habilidades--flechaDown');
+
+flecha5.addEventListener('click', () => {
     window.location.href = "#contacto";
+})
+
+let flecha6 = document.querySelector('.contacto--flechaUp');
+
+flecha6.addEventListener('click', () => {
+    window.location.href = "#habilidades";
 })

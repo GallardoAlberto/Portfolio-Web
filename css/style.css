@@ -183,7 +183,7 @@ html {
     width: 40px;
     display: block;
     margin: 0px auto;
-    padding: 40px;
+    padding: 80px 0 40px;
     font-size: 40px;
     transition: 0.4s;
     color: #191619;
@@ -193,7 +193,7 @@ html {
     width: 40px;
     display: block;
     margin: 0px auto;
-    padding: 40px;
+    padding: 40px 0 80px;
     font-size: 40px;
     transition: 0.4s;
     color: #191619;
@@ -236,99 +236,189 @@ html {
     font-size: 18px;
 }
 
+/* habilidades */
+
+.habilidades{
+    background-color: #dfdfdf;
+    padding: 20px;
+}
+.habilidades--iconos{
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.habilidades--iconos i{
+    margin: 30px;
+    color: rgb(53, 53, 53);
+    font-size: 100px;
+    transition: 0.2s;
+    padding: 20px;
+    border-radius: 17px;
+}
+
+.habilidades--iconos i:hover{
+    transform: scale(1.1);
+    background-color: rgb(53, 53, 53);
+    color: #dfdfdf;
+    box-shadow: 0px 0px 4px black;
+
+}
+
+
+.habilidades .habilidades--flechaUp {
+    width: 40px;
+    display: block;
+    margin: 0px auto;
+    padding: 80px 0 40px;
+    font-size: 40px;
+    transition: 0.4s;
+    color: rgb(53, 53, 53);
+}
+
+.habilidades .habilidades--flechaDown {
+    width: 40px;
+    display: block;
+    margin: 0px auto;
+    padding: 40px 0 80px;
+    font-size: 40px;
+    transition: 0.4s;
+    color: rgb(53, 53, 53);
+}
+
+.habilidades .habilidades--flechaDown:hover {
+    text-shadow: 0px -15px 0px rgb(53, 53, 53) !important;
+}
+
+.habilidades .habilidades--flechaUp:hover {
+    text-shadow: 0px 15px 0px rgb(53, 53, 53) !important;
+}
 /* contacto */
 
-.contacto {
-    display: flex;
+.contacto{
+    background-color: #F4F5F5;
 }
 
 .contacto--redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    background-color: #1E0707;
-    padding: 20px;
+    text-align: center;
+    padding: 0 0 80px;
 }
 
-.contacto .contacto--redes h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 50px;
-    text-shadow: 3px 3px 0px black;
-    font-size: 40px;
+.contacto--redes h3,i{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #191619;
 }
 
-.contacto .contacto--redes--iconos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* redes sociales */
-
-.contacto--redes--iconos a{
-    color: #1E0707;
+.contacto--redes i{
+    color: #F4F5F5;
+    background-color: #191619;
+    padding: 13px;
+    box-shadow: 0px 0px 4px black;
     border-radius: 200px;
-}
-.contacto--redes--iconos i{
     margin: 10px;
-    border-radius: 200px;
-    padding: 10px 12px;
-    background-color: white;
-    font-size: 40px;
+    border: 1px solid;
+    border: 2px solid white;
 
 }
-/* formulario */
 
-.contacto--formulario {
-    width: 50%;
-    height: 50vh;
-    background-image: url('../multimedia/imgContacto.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+.contacto--redes i:hover{
+    cursor: pointer;
+}
+
+.contacto hr{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contacto--form{
+    padding: 0px 0px 80px;
+}
+.contacto--form h3{
+    text-align: center;
+    font-size: 35px;
+    padding: 80px 0 50px;
+    color: #191619;
+}
+
+.contacto--form form{
+    border-radius: 7px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.contacto--formulario h3 {
-    text-align: center;
-    padding: 20px;
-    font-size: 23px;
-    padding: 30px;
-    background-color: red;
-    color: white;
-    border-radius: 7px 7px 0 0;
-}
-
-.contacto--formulario form {
-    width: 50%;
-    border: 1px solid black;
-    background-color: rgb(44, 44, 44);
-    border-radius: 7px;
-}
-
-.contacto--formulario p {
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.contacto--formulario p input {
-}
-
-.contacto--formulario--envio {
-    display: block;
     margin: 0 auto;
+    width: 300px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px 0px #191619;
+    background-color: rgb(53, 53, 53);
+    padding: 20px 0;
+}
+.contacto--form p{
+    font-size: 17px;
+    padding: 10px 20px;
+}
+.contacto--form form label{
+    padding: 5px;
+    color: #F4F5F5;
+}
+.contacto--form form input{
+    font-weight: 500;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
+.contacto--form form .boton{
+    width: 100px; 
+    margin: 10px 10px 0;
     padding: 7px;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+.contacto--form form .envio{
+    background-color: #62527d;
+
+}
+.contacto--form form textarea{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    resize: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+.contacto .contacto--flechaUp {
+    width: 40px;
+    display: block;
+    margin: 0px auto;
+    padding: 80px 0 40px;
+    font-size: 40px;
+    transition: 0.4s;
+    color: rgb(53, 53, 53);
 }
 
+.contacto .contacto--flechaDown {
+    width: 40px;
+    display: block;
+    margin: 0px auto;
+    padding: 40px 0 80px;
+    font-size: 40px;
+    transition: 0.4s;
+    color: rgb(53, 53, 53);
+}
+
+.contacto .contacto--flechaDown:hover {
+    text-shadow: 0px -15px 0px rgb(53, 53, 53) !important;
+}
+
+.contacto .contacto--flechaUp:hover {
+    text-shadow: 0px 15px 0px rgb(53, 53, 53) !important;
+}
 
 @media (max-width: 1050px) {
 

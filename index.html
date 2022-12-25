@@ -28,6 +28,7 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobreMi">Sobre mí</a></li>
                 <li><a href="#">Trabajo</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -90,43 +91,69 @@
 
         </div>
 
+        <div id="habilidades" class="habilidades">
+
+            <i class="fa-sharp fa-solid fa-chevron-up habilidades--flechaUp"></i>
+
+            <div class="habilidades--iconos">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-angular"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-git-alt"></i>
+            </div>
+
+            <i class="fa-sharp fa-solid fa-chevron-down habilidades--flechaDown"></i>
+
+        </div>
         <div class="contacto" id="contacto">
+
+            <i class="fa-sharp fa-solid fa-chevron-up contacto--flechaUp"></i>
 
             <div class="contacto--redes">
 
                 <h3>Redes Sociales</h3>
-
-                <div class="contacto--redes--iconos">
-                    <a href="https://www.linkedin.com/in/alberto-gallardo-morales-036005253/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
-                
+                <a href="https://wa.me/+346783449843"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:gallardo.alb.1998@gmail.com?Subject=Mensaje%20del%20portfolio"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/alberto-gallardo-morales-036005253/"><i class="fa-brands fa-linkedin-in"></i></a>
+            
             </div>
 
-            <div class="contacto--formulario">
-                <form>
-                    <h3>Rellena el formulario</h3>
+            <hr>
+            <div class="contacto--form">
 
+                <h3>Rellena el formulario</h3>
+                <form>
                     <p>
-                        <label>Tú nombre:</label><br>
+                        <label>Nombre:</label>
                         <input type="text" required>
                     </p>
-
                     <p>
-                        <label>Tú correo electrónico</label><br>
-                        <input type="email" placeholder="Correo electrónico" required>
+                        <label>Correo electrónico:</label>
+                        <input type="email" required>
+                    </p>
+                    <p>
+                        <label>Télefono:</label>
+                        <input type="tel">
+                    </p>
+                    <p>
+                        <label>Mensaje:</label>
+                        <textarea></textarea>
                     </p>
 
-                    <p>
-                        <label>Tú mensaje</label><br>
-                        <textarea required></textarea><br>
-                    </p>
-
-                    <input class="contacto--formulario--envio" type="submit" value="Enviar">
+                    <div>
+                        <input type="submit" class="boton envio">
+                        <input type="reset" class="boton">
+                    </div>
+                    
                 </form>
             </div>
 
         </div>
+
     </section>
 
 
