@@ -241,13 +241,14 @@ html {
 .habilidades{
     background-color: #dfdfdf;
     padding: 20px;
+    box-sizing: border-box;
 }
 .habilidades--iconos{
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .habilidades--iconos i{
@@ -424,30 +425,29 @@ html {
     /* barra de navegacion */
 
     .cabecera--navegar{
-        display: block !important;
-        background-color: transparent !important;
-    }
-    
-    .cabecera--menu i {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        margin: 35px 60px;
-        color: white;
-        display: block;
-        font-size: 27px;
-        cursor: pointer;
-        display: flex;
-        justify-content: flex-end;
+        width: 100%;
     }
 
     .cabecera--menu{
+        margin-top: calc((104px - 77px)/2);
         display: block;
-        width: 100%;
     }
+
+    .cabecera--menu i{
+        margin-right: 50px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
     .cabecera--menu li {
         display: none;
-        padding: 15px 60px;
+        background-color: transparent;
+        padding: 20px 60px;
     }
     .cabecera--menu li:hover {
         background-color: transparent;
@@ -495,35 +495,67 @@ html {
 @media (max-width: 912px) {
 
 
+    /* menu */
+
+    .cabecera nav img {
+        width: 90px;
+    }
+
+    .cabecera--navegar--logo{
+        width: 30px;
+        margin: 5px 30px !important;
+    }
+
+    /* cabecera titulo */
+
+    .cabecera--img h1{
+        font-size: 30px;
+    }
+
+    .cabecera--img p{
+        font-size: 11px;
+    }
+
     /* sobre mi */
 
     .sobreMi--inf img{
         margin: 20px auto;
         width: 300px;
         border-radius: 10px;
+        padding: 5px;
     }
 
     .sobreMi--desc h3{
-        width: 100%;
+        font-size: 27px;
+        padding: 20px;
     }
 
     .sobreMi--desc p{
         box-sizing: border-box;
         width: 100%;
-        font-size: 17px;
-        padding: 5px 0;
+        font-size: 15px;
+        padding: 5px 40px;
     }
 
     /* habilidades */
 
-    .habilidades--iconos{
-        margin: 0 auto;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        grid-template-columns: repeat(3, 1fr);
+    .habilidades{
+        background-color: #dfdfdf;
+        padding: 0px;
+        box-sizing: border-box;
     }
 
-    /* redes sociales */
+    .habilidades--iconos i{
+        font-size: 90px;
+    }
 
+    /* contacto */
+
+    .contacto h3{
+        font-size: 27px;
+    }
+
+    .contacto p{
+        font-size: 15px;
+    }
 }
