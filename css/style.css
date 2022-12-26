@@ -244,11 +244,10 @@ html {
 }
 .habilidades--iconos{
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
 }
 
 .habilidades--iconos i{
@@ -330,7 +329,7 @@ html {
 }
 
 .contacto hr{
-    width: 500px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -491,4 +490,40 @@ html {
         font-size: 17px;
         padding: 5px 200px;
     }
+}
+
+@media (max-width: 912px) {
+
+
+    /* sobre mi */
+
+    .sobreMi--inf img{
+        margin: 20px auto;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .sobreMi--desc h3{
+        width: 100%;
+    }
+
+    .sobreMi--desc p{
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 17px;
+        padding: 5px 0;
+    }
+
+    /* habilidades */
+
+    .habilidades--iconos{
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* redes sociales */
+
 }
