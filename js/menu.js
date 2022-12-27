@@ -27,8 +27,8 @@ document.addEventListener('scroll', () => {
 
 //menu adaptado a movil, icono en funcionamiento
 
-let iconoMenu = document.querySelector('.cabecera--menu--icono');
-let opcionesMenu = barraNavegacion.getElementsByTagName('li');
+let iconoMenu = document.querySelector('.cabecera--navegar--icono');
+let opcionesMenu = iconoMenu.getElementsByTagName('li');
 let contClickMenu = 0;
 
 iconoMenu.addEventListener('click', () =>{
@@ -38,9 +38,10 @@ iconoMenu.addEventListener('click', () =>{
     iconoMenu.classList.remove('fa-bars');
     iconoMenu.classList.add('fa-xmark');
     
-    for (let i = 0; i < opcionesMenu.length; i++) {
+      for (let i = 0; i < opcionesMenu.length; i++) {
       opcionesMenu[i].style.display = 'flex';
-      opcionesMenu[i].style.justifyContent = 'flex-end';
+      opcionesMenu[i].style.animation = 'aparecer 1s';
+      opcionesMenu[i].style.animationFillMode = 'forwards';
     }
     contClickMenu++;
   }else{
@@ -48,7 +49,8 @@ iconoMenu.addEventListener('click', () =>{
     iconoMenu.classList.add('fa-bars');
 
     for (let i = 0; i < opcionesMenu.length; i++) {
-      opcionesMenu[i].style.display = 'none';
+      opcionesMenu[i].style.animation = 'desaparecer 1s';
+      opcionesMenu[i].style.animationFillMode = 'forwards';
     }
 
     contClickMenu++;
