@@ -22,6 +22,20 @@ document.addEventListener('scroll', () => {
     ubicacion = window.scrollY;
   }
 
+  // para cuando sea movil
+
+  if(ancho < 1050){
+    if (window.scrollY > ubicacion) {
+      barraNavegacion.style.animation = 'ocultarMenuMovil 0.6s linear';
+      barraNavegacion.style.animationFillMode = 'forwards';
+    } else {
+      barraNavegacion.style.animation = 'mostrarMenuMovil 0.6s linear';
+    }
+
+    ubicacion = window.scrollY;
+
+  }
+
 
 });
 
@@ -38,10 +52,14 @@ iconoMenu.addEventListener('click', () =>{
     iconoMenu.classList.remove('fa-bars');
     iconoMenu.classList.add('fa-xmark');
     
+    let cont = 0;
+
       for (let i = 0; i < opcionesMenu.length; i++) {
       opcionesMenu[i].style.display = 'flex';
       opcionesMenu[i].style.animation = 'aparecer 1s';
       opcionesMenu[i].style.animationFillMode = 'forwards';
+      opcionesMenu[i].style.animationDelay = cont + 's';
+      cont = cont + 0.4;
     }
     contClickMenu++;
   }else{
