@@ -52,7 +52,7 @@ html {
 
 .cabecera .cabecera--navegar {
     width: 100%;
-    border: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
     position: fixed;
     display: flex;
     background-color: black;
@@ -130,6 +130,7 @@ html {
         top: -500px;
     }
 }
+
 .cabecera nav img {
     width: 100px;
 }
