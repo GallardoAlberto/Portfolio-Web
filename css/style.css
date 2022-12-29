@@ -247,14 +247,14 @@ html {
 
 .sobreMi--desc h3 {
     font-size: 35px;
-    padding: 20px 0;
+    padding: 10px 0 20px 0;
     color: #191619;
 
 }
 
 .sobreMi--desc p {
     font-weight: 500;
-    line-height: 27px;
+    line-height: 23px;
     font-size: 18px;
 }
 
@@ -339,12 +339,15 @@ html {
     color: #F4F5F5;
     background-color: #191619;
     padding: 13px 15px;
-    box-shadow: 0px 0px 4px black;
     border-radius: 200px;
     margin: 10px;
     border: 1px solid;
-    border: 2px solid white;
+    transition: 0.4s;
+}
 
+.contacto--redes i:hover{
+    background-color: #dd8f10;
+    transform: scale(1.1);
 }
 
 .contacto--redes i:hover{
@@ -569,7 +572,7 @@ html {
     .cabecera--img {
         background: url('../multimedia/img2.jpg');
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
     }
     
