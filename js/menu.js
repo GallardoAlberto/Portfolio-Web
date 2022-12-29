@@ -25,7 +25,7 @@ document.addEventListener('scroll', () => {
   // para cuando sea movil
 
   if(ancho < 1050){
-    if (window.scrollY > ubicacion && window.scrollY != 0) {
+    if (window.scrollY > ubicacion) {
       barraNavegacion.style.animation = 'ocultarMenuMovil 0.6s linear';
       barraNavegacion.style.animationFillMode = 'forwards';
     } else {
