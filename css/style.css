@@ -571,9 +571,6 @@ html {
 
     .cabecera--img {
         background: url('../multimedia/img2.jpg');
-        background-attachment: fixed;
-        background-size: contain;
-        background-position: center center;
     }
     
     .cabecera--img h1{
