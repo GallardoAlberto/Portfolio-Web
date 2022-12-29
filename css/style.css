@@ -52,7 +52,7 @@ html {
 
 .cabecera .cabecera--navegar {
     width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     position: fixed;
     display: flex;
     background-color: black;
@@ -267,7 +267,7 @@ html {
 }
 .habilidades--iconos{
     margin: 0 auto;
-    width: 90%;
+    width: 50%;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -372,7 +372,7 @@ html {
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    width: 300px;
+    width: 600px;
     border: 2px solid white;
     box-shadow: 0px 0px 4px 0px #191619;
     background-color: rgb(53, 53, 53);
@@ -390,7 +390,7 @@ html {
     font-weight: 500;
     padding: 5px 10px;
     box-sizing: border-box;
-    width: 100%;
+    width: 560px;
     margin-top: 10px;
 }
 .contacto--form form .boton{
@@ -411,7 +411,7 @@ html {
     box-sizing: border-box;
     resize: none;
     margin-top: 10px;
-    width: 100%;
+    width: 560px;
     height: 150px;
 }
 .contacto .contacto--flechaUp {
@@ -464,7 +464,7 @@ html {
         display: none;
         width: 200px;
         top: 40px;
-        background-color: rgb(139, 79, 79);
+        background-color: rgb(53, 53, 53);
         position: relative;
         border: 2px solid white;
         border-radius: 12px 0 0 12px;
@@ -528,7 +528,9 @@ html {
         font-size: 50px;
     }
 
-    .sobreMi{
+    /* sobre mi */
+
+    .sobreMi{ 
         display: block;
     }
 
@@ -555,6 +557,8 @@ html {
         font-size: 17px;
         padding: 5px 200px;
     }
+
+
 }
 
 @media (max-width: 912px) {
@@ -606,6 +610,7 @@ html {
     }
 
     .habilidades--iconos{
+        width: 90%;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .habilidades--iconos i{
@@ -623,6 +628,18 @@ html {
     
 
     /* contacto */
+
+    .contacto--form form{
+        width: 300px;
+    }
+
+    .contacto--form form input{
+        width: 100%;
+    }
+
+    .contacto--form form textarea{
+        width: 100%;
+    }
 
     .contacto h3{
         font-size: 27px;
